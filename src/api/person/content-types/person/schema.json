@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "people",
+  "info": {
+    "singularName": "person",
+    "pluralName": "people",
+    "displayName": "Person"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60,
+      "unique": true
+    },
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    },
+    "Department": {
+      "type": "enumeration",
+      "enum": [
+        "Construction",
+        "MANDE",
+        "FitOut",
+        "NewRegions",
+        "Logistics",
+        "None"
+      ]
+    },
+    "Sales": {
+      "type": "biginteger"
+    }
+  }
+}

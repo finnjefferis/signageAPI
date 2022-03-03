@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "indices",
+  "info": {
+    "singularName": "index",
+    "pluralName": "indices",
+    "displayName": "Index"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Main": {
+      "type": "enumeration",
+      "enum": [
+        "graph",
+        "youtube"
+      ]
+    }
+  }
+}
