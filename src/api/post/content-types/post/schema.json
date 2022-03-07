@@ -18,12 +18,7 @@
     },
     "Body": {
       "type": "richtext",
-      "maxLength": 512
-    },
-    "name": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::person.person"
+      "maxLength": 750
     }
   }
 }
