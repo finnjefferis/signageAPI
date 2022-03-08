@@ -4,7 +4,8 @@
   "info": {
     "singularName": "person",
     "pluralName": "people",
-    "displayName": "Person"
+    "displayName": "Person",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,19 +23,14 @@
       "relation": "oneToOne",
       "target": "admin::user"
     },
-    "Department": {
-      "type": "enumeration",
-      "enum": [
-        "Construction",
-        "MANDE",
-        "FitOut",
-        "NewRegions",
-        "Logistics",
-        "None"
-      ]
-    },
     "Sales": {
       "type": "biginteger"
+    },
+    "departments": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::department.department",
+      "inversedBy": "people"
     }
   }
 }

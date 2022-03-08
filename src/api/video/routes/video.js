@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * index router.
+ * video router.
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::index.index');
+module.exports = createCoreRouter('api::video.video');
