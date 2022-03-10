@@ -18,7 +18,7 @@
     },
     "Body": {
       "type": "richtext",
-      "maxLength": 600
+      "maxLength": 500
     }
   }
 }
